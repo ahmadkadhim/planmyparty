@@ -1,0 +1,27 @@
+
+
+header h1 {
+	font-size: 3em;
+	font-weight: 700;
+	// color: white;
+}
+
+
+#explainer {
+	.description, #phone, ul {
+		@include span-columns(4);
+	}
+}
+
+
+#quote {
+	h2 {
+		padding: 6em 0;
+	}
+}
+
+#contact {
+	.number-email {
+		font-size: 100%;
+	}
+}

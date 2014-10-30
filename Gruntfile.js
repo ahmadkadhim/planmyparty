@@ -155,6 +155,10 @@ module.exports = function (grunt) {
         loadPath: 'bower_components'
       },
       dist: {
+        options: {
+          style: 'expanded',
+          noCache: 'true'
+        },
         files: [{
           expand: true,
           cwd: '<%= config.app %>/styles',
