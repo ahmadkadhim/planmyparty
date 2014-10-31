@@ -1,4 +1,6 @@
 
+'use strict';
+
 var videoLoad = function() {
 
 	$('header').videoBG({
@@ -7,6 +9,13 @@ var videoLoad = function() {
 		webm: 'videos/skyline.webm',
 		poster: 'images/skyline.png',
 		scale: true
+	});
+
+	$('#quote .section-contact').videoBG({
+		mp4: 'videos/party.mp4',
+		ogv: 'videos/party.ogv',
+		webm: 'videos/party.webm',
+		poster: 'images/party.png'
 	});
 
 	$('#contact').videoBG({
@@ -20,7 +29,7 @@ var videoLoad = function() {
 var resizeBlocks = function() {
 	var width = $('#photo-grid li.block').width();
 	console.log(width);
-	$('#photo-grid li.block, #cta button').css("height", width);
+	$('#photo-grid li.block, #cta button').css('height', width);
 }
 
 $(document).ready(function() {
@@ -41,7 +50,7 @@ $(window).resize(resizeBlocks);
 
 
 	// $('body').videoBG({
-	// 	position:"fixed",
+	// 	position:'fixed',
 	// 	zIndex:0,
 	// 	mp4:'assets/christmas_snow.mp4',
 	// 	ogv:'assets/christmas_snow.ogv',
