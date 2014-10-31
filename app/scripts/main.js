@@ -20,12 +20,23 @@ var videoLoad = function() {
 var resizeBlocks = function() {
 	var width = $('#photo-grid li.block').width();
 	console.log(width);
-	$('#photo-grid li.block').css("height", width);
+	$('#photo-grid li.block, #cta button').css("height", width);
 }
 
-$(document).ready(videoLoad);
+$(document).ready(function() {
+	videoLoad();
 
-$(document).ready(resizeBlocks);
+	// slidr.create('plan-my-slidr', {
+	// 		controls: 'none',
+	//         transition: 'fade'
+ //        }).add('v', ['one', 'two', 'three', 'one'])
+ //          .auto(2500);
+
+
+	resizeBlocks();
+});
+
+// $(document).ready(resizeBlocks);
 $(window).resize(resizeBlocks);
 
 

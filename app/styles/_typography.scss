@@ -1,15 +1,21 @@
 
 
+button {
+	font-family: 'Lato', $helvetica;
+}
+
 
 header {
 	h1 {
+		background: black;
 		margin: 0;
 		display: block;
-		padding: .25em .25em;
-		text-align: center;
+		padding: .3em .75em;
+		// text-align: center;
 		color: white;
 		font-weight: 300;
-
+		font-size: 1.8em;
+		letter-spacing: -1px;
 	}
 }
 
@@ -33,6 +39,12 @@ header {
 		padding: .35em;
 	}
 
+}
+
+#photo-grid {
+	li.block {
+		font-weight: 300;
+	}
 }
 
 
