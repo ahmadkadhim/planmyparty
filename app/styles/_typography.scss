@@ -4,12 +4,24 @@ button {
 	font-family: 'Lato', $helvetica;
 }
 
+a {
+	color: white;
+	font-weight: 500;
+
+	&:hover {
+		color: darken(white, 10%);
+	}
+}
+
+.fa-heart {
+	color: $red;
+}
+
 
 header {
 	h1 {
-		background: black;
 		margin: 0;
-		display: block;
+		display: inline-block;
 		padding: .3em .75em;
 		// text-align: center;
 		color: white;

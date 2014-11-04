@@ -4,8 +4,57 @@
 	padding: $default-spacing;
 }
 
+.videoBG {
+	min-width: 100% !important;
+	max-width: 100% !important;
+}
+
 header {
-	min-height: 32em;
+	min-height: 40em;
+
+	#top-bar {
+		background: black;
+		min-height: $top-row-height;
+	}
+
+	.work-hard {
+		
+		@include position(absolute, 0 0 0 0);
+		background: url('../images/work-hard.png') 50% 50% no-repeat;
+		background-size: 60%;
+		z-index: 1;
+		margin-top: $top-row-height;
+	}
+
+	nav {
+		float: right;
+
+		a {
+			color: white;
+			&:hover {
+				color: darken(white, 10%);
+			}
+		}
+	}
+
+	nav, li, h6 {
+		display: inline-block;
+	}
+
+	li {
+		padding: 1em;
+	}
+
+
+	.sign-up {
+		a {
+			color: $red;
+			&:hover {
+				color: darken($red, 10%);
+			}
+		}
+	}
+
 }
 
 #explainer {
@@ -67,6 +116,7 @@ header {
 			background: $red;
 			color: white;
 			font-weight: 300;
+			font-size: 2em;
 
 			@include transition(all .15s ease-out);
 
@@ -123,18 +173,15 @@ header {
 #contact {
 
 	color: white;
+	overflow: hidden;
 
-	.section-content {
-		padding-top: 24em;
-		padding-bottom: 4em;
-	}
 
 	h4 {
 		color: $red;
 	}
 
 	.address {
-		// font-size: 95%;
+		padding-top: 24em;
 	}
 
 	h3 {
@@ -143,6 +190,7 @@ header {
 
 	.number-email {
 		font-size: 90%;
+		padding-bottom: 4em;
 	}
 
 	// min-height: 36em;
@@ -152,9 +200,24 @@ header {
 footer {
 
 	@include clearfix;
-
+	
+	position: relative;
 	background: black;
 	color: white;
+	padding: 1.5em;
+
+	h6 {
+		// display: inline-block;
+		padding: .5em;
+	}
+
+	.made-copyright {
+		float: left;
+	}
+
+	.social-info {
+		float: right;
+	}
 }
 
 
